@@ -1,0 +1,135 @@
+/* Stile base */
+body {
+    background: linear-gradient(to right, #0A0F2C, #1A0033);
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Neon rettangoli */
+.neon-rect {
+    position: fixed;
+    background: #0119F0;
+    box-shadow: 0 0 20px #0119F0,
+                0 0 40px #0119F0,
+                0 0 60px #0119F0;
+    opacity: 3;
+    z-index: 0;
+}
+
+/* Rettangoli */
+.rect1 { width: 80%; height: 10px; top: 20%; left: 10%; }
+.rect2 { width: 10px; height: 60%; top: 20%; left: 15%; }
+.rect3 { width: 10px; height: 60%; top: 20%; right: 15%; }
+
+/* Contenuto sopra neon */
+.container { 
+    position: relative; 
+    z-index: 1; 
+    padding: 50px 20px 100px 20px; /* padding in fondo più grande */
+    min-height: 100vh; /* altezza minima 100% dello schermo */
+}
+
+/* Gallery immagini */
+.gallery img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Pulsanti */
+.btn {
+    box-shadow: 0 0 5px #0119F0,
+                0 0 15px #0119F0,
+                0 0 25px #0119F0;
+    display: inline-block;
+    width: 200px;
+    padding: 12px 25px;
+    margin: 10px;
+    background: white;
+    color: #0003F0;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover { background: #0119F0; color: white; }
+/* Bottoni in alto lettera */
+.top-buttons {
+    display: inline-block;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+
+    .top-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .top-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    p, .lettera {
+        font-size: 22px;
+        margin-bottom: 30px; /* più spazio sotto il testo */
+    }
+
+    .buttons {
+        margin-bottom: 30px; /* spazio tra pulsanti e ciò che viene dopo */
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 16px;
+        margin: 10px 0; /* pulsanti uno sotto l’altro */
+        display: block;
+    }
+
+    .intro-text {
+        font-size-: 22px;
+        line-height: 1.6;
+        color: #ffffff;
+    }
+
+    .intro-text ul li {
+        font-size: 22px;
+    }
+
+    .gallery img {
+        width: 80%;
+        margin: 15px auto;
+        display: block;
+        border-radius: 10px;
+        
+        box-shadow: 0 0 15px #0119F0, 0 0 30px
+    #0119F0, 0 0 45px #0119F0;
+        border: 3px solid #0119F0;
+    }
+
+    .container {
+        padding-bottom: 50px; /* spazio extra in fondo */
+    }
+}
+
