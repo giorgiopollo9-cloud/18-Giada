@@ -54,6 +54,8 @@ body {
     border-radius: 30px;
     font-weight: bold;
     transition: 0.3s;
+
+    animation: scendiDallAlto 0.8s ease;
 }
 .btn:hover { background: #0119F0; color: white; }
 /* Bottoni in alto lettera */
@@ -131,7 +133,20 @@ body {
     .container {
         padding-bottom: 50px; /* spazio extra in fondo */
     }
+
+    /* tutto il tuo CSS precedente... */
+
+@keyframes scendiDallAlto {
+    0%{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
+
 
 
 
