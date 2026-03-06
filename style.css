@@ -55,7 +55,7 @@ body {
     font-weight: bold;
     transition: 0.3s;
 
-    animation: scendiDallAlto 0.8s ease;
+    animation: scendiDallAlto 0.8s ease 0.1s; /* 0.1s delay */
 }
 .btn:hover { background: #0119F0; color: white; }
 /* Bottoni in alto lettera */
@@ -146,6 +146,7 @@ body {
         opacity: 1;
     }
 }
+
 
 
 
