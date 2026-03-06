@@ -134,8 +134,7 @@ body {
         padding-bottom: 50px; /* spazio extra in fondo */
     }
 
-    /* tutto il tuo CSS precedente... */
-
+    /* Animazione scendi dall'alto */
 @keyframes scendiDallAlto {
     0%{
         transform: translateY(-150px);
@@ -146,6 +145,12 @@ body {
         opacity: 1;
     }
 }
+
+/* Applica animazione ai bottoni */
+.buttons .btn {
+    animation: scendiDallAlto 0.8s ease forwards;
+}
+
 
 
 
