@@ -1,6 +1,6 @@
 /* Stile base */
 body {
-    background: linear-gradient(to right, #0A0F2C, #1A0033);
+    background: linear-gradient(to right, #00008b, #0000cd);
     overflow-x: hidden;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -132,4 +132,5 @@ body {
         padding-bottom: 50px; /* spazio extra in fondo */
     }
 }
+
 
