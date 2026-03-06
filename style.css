@@ -55,7 +55,7 @@ body {
     font-weight: bold;
     transition: 0.3s;
 
-    animation: scendiDallAlto 2s ease forwards;
+    animation: scendiDallAlto 5s ease forwards;
 }
 .btn:hover { background: #0119F0; color: white; }
 /* Bottoni in alto lettera */
@@ -148,8 +148,9 @@ body {
 
 /* Applica animazione ai bottoni */
 .buttons .btn {
-    animation: scendiDallAlto 2s ease forwards;
+    animation: scendiDallAlto 5s ease forwards;
 }
+
 
 
 
